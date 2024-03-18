@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY_Portfolio</title>
+</head>
+<script type="javascript.js"></script>
+<style>
+	*{
+		scroll-snap-stop: always;
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	html{
+		scroll-behavior: smooth;
+	}
+	body{
+		width: fit-content;
+		 background-color: gray;
+	}
+	.navarea{
+		display: flex;
+        align-self: center;
+		text-decoration: none;
+		float: right;
+		margin-left: 1%;
+		color: black;
+		margin-right: 2%;
+	    padding: 10px;
+		margin-top: 1%;
+		color: white;
+		    font-size: 22px;
+    font-weight: 700;
+	}
+
+	.navarea:hover{
+		background-color: blueviolet;
+		border-radius: 15px;
+	}
+	.logoimg{
+		height: 30px;
+		top: 25%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+	}
+	.logo{
+		  height: 83px;
+    width: 8%;
+    color: white;
+	}
+	.navbar{
+	width: 85%;
+    height: 80px;
+    align-content: center;
+    position: fixed;
+    top: 20px;
+    left: 12%;
+	}
+	.navcont{
+		display: flex;
+		position: fixed;
+        top: 17px;
+        width: 100%;
+      background-color: rgb(27 33 36);
+	}
+		#outer{
+	width: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: black;
+	}
+	.sect{
+	 position: relative;
+    z-index: -1;
+      padding-top: 104px;
+    display: flex;
+    animation-name: section;
+	}
+	.info{
+	 background-color: #cacaef;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    top: 0px;
+	}
+	#linfo{
+		float: right;
+	}
+	#inner{
+	width: 100%;
+    position: fixed;
+    top: 16px;
+	}
+	.ft{
+		width: 95%;
+		display: flex;
+		position: relative;
+		height: 325px;
+		margin: 20px;
+		    color: white;
+	}
+	.bx1{
+		width: 46%;
+		margin: 1%;
+		    color: white;
+	}
+	.bx2{
+		width: 50%;
+		margin: 1%;
+		    color: white;
+	}
+	.ssm{
+		margin: 2%;
+		width: 6%;
+		border-radius: 40px;
+		border: 2px solid;
+		    background-color: white;
+	}
+	.ssm:hover{
+		background-color: blue;
+	}
+	.icon{
+	align-items: center;
+	}
+	.cp{
+	position: relative;
+    bottom: 0px;
+    background-color: black;
+    height: 52px;
+	}
+	#lln{
+	text-align: center;
+	color: white;
+    position: relative;
+    top: 36%;
+	}
+	footer{
+	 position: relative;
+    bottom: 0px;
+     border-radius: 20px 20px 0px 0px;
+     background-color: rgb(27 33 36);
+	}
+	#cd{
+		align-items: center;
+	text-align: center;
+    font-weight: 900;
+    font-size: larger;
+        color: white;
+	}
+	form{
+		display: inline-grid;
+    width: 89%;
+    height: 94%;
+    align-items: center;
+    margin-right: 3%;
+    float: right;
+	}
+	.in{
+		 font-size: 17px;
+		height: 60%;
+		padding: 1%;
+		border-radius: 15px;
+		background-color: azure;
+	}
+	.ina{
+		font-size: 17px;
+    height: 75%;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: azure;
+	}
+	#btn{
+		width: 30%;
+		align-items: center;
+		margin: auto;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 32px;
+	}
+	.ing{
+		width: 5%;
+		height: 5%;
+		margin-top: 1.5%;
+	 background-color: white;
+	}
+	.bttn{
+		width: 100%;
+	}
+	.indiv{
+		display: flex;
+		    color: white;
+	}
+	.add{
+     padding: 10px;
+     color: white;
+	}
+	.hml{
+		width: 60%;
+		 padding: 2%;
+	}
+	.pic{
+		    align-self: center;
+		width: 40%;
+	}
+	.picc{
+		    float: right;
+    width: 52%;
+    margin-right: 17%;
+	}
+	.hd{
+		padding: 1%;
+		color: white;
+	}
+	table,tr,td,th{
+		border:2px solid black;
+		 border-collapse: collapse;
+		 padding: 2%;
+	}
+	.ed{
+		padding: 1%;
+	}
+	.abtme{
+		box-shadow: -1px 3px 16px  9px rebeccapurple;
+		margin-top: 2%;
+		   margin-right: 1%;
+    margin-left: 1%;
+		border: 2px solid black;
+	   padding: 2%;
+	   background-color: gainsboro;
+	   border-radius: 20px;
+	         }
+	 table{
+		width: 100%;
+	}
+	.dn{
+		text-decoration: none;
+		    font-size: 19px;
+	}
+	.dnc{
+		width: 67%;
+		    margin-top: 4%;
+	}
+	.dni{
+		height: 34px;
+	}
+	.dimg{
+		width: 34%;
+	}
+	.dnd{
+		animation: anim infinite;
+		    box-shadow: 2px 2px 2px indianred;
+		    margin-top: 3%;
+		display: flex;
+    width: 19%;
+		    padding: .7%;
+    border: 2px solid black;
+    border-radius: 11px;
+	}
+	@keyframes anim{
+     from {
+       
+     }
+     to {
+
+     }
+	}
+	@keyframes section{
+     from {
+     	margin-left: 1%;
+       
+     }
+     to {
+   margin-right: 90%;
+     }
+	}
+	.brdr{
+		     padding-top: 104px;
+	}
+	.skill{
+		    padding-top: 110px;
+	}
+	.skk{
+		       margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(124px, 234px));
+    gap: 2.5rem;
+        justify-content: center;
+}
+	
+	.sk{
+		width: 212px;
+	}
+	.si{
+   border: 2px solid hotpink;
+    border-radius: 20px;
+    background-color: gainsboro;
+       width: 103px;
+    margin-left: 17%;
+    padding: 15%;
+	}
+	.si:hover{
+    box-shadow: 0px 0px 3px 3px #552de4;
+	}
+	.sk:hover{
+		scale: 1.1;
+
+	}
+	.prjt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(483px, 438px));
+    gap: 1.5rem;
+    justify-content: center;
+    background-color: gainsboro;
+        border-radius: 20px;
+            padding: 6% 0%;
+	}
+	.prjt1{
+		box-shadow: 0px 0px 0px 4px red;
+		 margin: 2%;
+    padding: 4%;
+    border: 2px solid darkred;
+    border-radius: 20px;
+	}
+	#prh{
+		margin-left: 2%;
+		    width: 181px;
+		padding: 1%;
+    background-color: aliceblue;
+    border-radius: 16px;
+	}
+	.nm{
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+        margin-left: 17%;
+	}
+</style>
+<body>
+<nav>
+	<div  class="info"><p id="linfo">Manoj Kumar Sharma  |   Java Developer  |  ph. no- 9479713622
+	</p><hr id="inner"></div>
+	<div class="navcont">
+	<div class="logo">
+		<img class="logoimg" id="lg" src="menu.png" onclick="menuf()">
+	</div>
+	<div class="navbar">
+	   <a id="home" class="navarea" href="#Home" >Home</a>
+	   <a class="navarea" href="#Skills">Skills</a>
+	    <a class="navarea" href="#AboutME"  >About Me</a>
+	   <a   class="navarea"href="#Contact">Contact</a>
+	</div>
+	</div>
+</nav>
+<hr id="outer">
+<div id="Home" class="sect">
+	 
+	<div class="hml"><h3 class="hd">I'm </h3> <h2 class="hd"> Manoj Kumar Sharma</h2> <h3 class="hd"> Aspiring Java Developer </h3>
+		<h3 class="hd"> Web Developer </h3>
+	<button class="dnd"><div class="dnc"> <a  class="dn" href="Manoj_resume_final.pdf">Resume  </a> </div> <div class="dimg" ><a href="Manoj_resume_final.pdf"><img class="dni" src="dwn.png"></a>  </div>
+	</button></div>
+	<div class="pic"><img class="picc" 
+		src="my_photo1.png"> </div>
+</div>
+<div id="Skills" class="skill"> <h2 id="prh"> Technical Skills</h2> <div class="skk"> <div class="sk">  <img class="si" src="html5.png"> <div  class="nm">HTML 5</div></div> <div class="sk"> <img class="si" src="css.png"><div  class="nm">CSS 3</div> </div>
+<div class="sk"> <img class="si" src="js.png"> <div  class="nm">JAVASCRIPT</div></div>
+<div class="sk"> <img class="si" src="java.png"><div  class="nm">JAVA</div> </div>
+<div class="sk"> <img class="si" src="php.png">  <div  class="nm">PHP</div></div>
+<div class="sk"> <img class="si" src="mysql.png"> <div  class="nm">MY-SQL</div> </div>
+<div class="sk"> <img class="si"src="python.png"> <div  class="nm">PYTHON</div> </div>
+<div class="sk"> <img class="si" src="c.png"> <div  class="nm">C</div> </div>
+<div class="sk"> <img  class="si" src="c++.png"> <div  class="nm">C++</div> </div>
+<div class="sk"> <img  class="si" src="react.png"> <div class="nm">React</div> </div>
+</div>
+</div>
+<h2 id="prh">Projects</h2>
+ <div class="prjt">
+ 	<div class="prjt1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+ 	<div class="prjt1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+ 	<div class="prjt1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+ 	<div class="prjt1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+ </div>
+<div id="AboutME" class="brdr">
+<div  class="abtme">
+	<h2 class="ed">Know About Me </h2>
+	<p>I'm Manoj Kumar Sharma, a second-year student studying Computer Science Engineering at the respected National Institute of Technology Mizoram. I love delving into software development, especially focusing on Java. I'm always eager to learn more and keep up with the latest in technology. With my strong dedication and constant thirst for knowledge, I'm ready to make my mark in the ever-changing world of technology.</p>
+	<h3 class="ed">Education/Academic</h3>
+	<table>
+		<tr>
+			<th>Course</th>
+			<th>Institute / School Name </th>
+			<th>Cgpa / Percentage</th>
+		</tr>
+		<tr>
+			<td>B.tech in Computer Science and Engineering</td>
+			<td>National Institute of technology Mizoram </td>
+			<td>9.04 (till 3rd Semester ) </td>
+		</tr>
+		<tr>
+			<td>Higher Secondary (class 12th)</td>
+			<td>Saraswati Shishu Mandir Vindhyanagar </td>
+			<td>96.8 % </td>
+		</tr>
+		<tr>
+			<td>Higher School (class 10th)</td>
+			<td>Saraswati Shishu Mandir Vindhyanagar </td>
+			<td>96 % </td>
+		</tr>
+	</table>
+</div>
+</div>
+<footer id="Contact">
+	<div class="ftcon"><p id="cd">Contact Details </p></div>
+	<div class="ft">
+		<div class="bx1">
+			<div class="indiv"><img  class="ing" src="info.png">
+			<h2 class="add">Information</h2></div>
+			<div class="indiv"><img class="ing" src="locat.png"><p class="add">Navjeevan vihar Sector No. 1 Vindhyangar Singrauli M.P , 486885</p></div>
+ <div class="indiv"><img class="ing" src="ar.png"><p class="add">manojsharma73cse@gmail.com</p></div>
+<div class="indiv"><img  class="ing" src="call.png"><p class="add">+91 9479713622</p></div>
+			<div class="icon"><a href="#"><img class="ssm" src="face.png"></a> <a href="#"><img class="ssm" src="face.png"></a><a href="#"><img class="ssm" src="tweet.png"></a><a href="#"><img class="ssm" src="tweet.png"></a><a href="#"><img class="ssm" src="link.png"></a></div>
+		</div>
+		<div class="bx2"> <form>
+			<input  class="in" type="text" name="name" placeholder="Enter your name">
+			<br>
+			<input   class="in" type="Email" name="email" placeholder="something@gmail.com">
+			<br>
+			<textarea class="ina"   placeholder="Enter your Message"></textarea>
+			<br>
+			<div class="bttn"><button id="btn">Submit</button></div>
+		 </form> </div>
+	</div>
+	<div class="cp"><p id="lln">Copyright 	&#169 2024 | policy | Description | All rights reserved </p></div>
+</footer>
+</body>
+</html>
